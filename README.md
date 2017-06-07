@@ -1,10 +1,9 @@
-# docker-ffmpeg-hls
-This docker image create for convert mp4 video files(.mp4) to HLS format(.ts) files, when running it will auto convert and generate playlist file(playlist.m3u8) and html video player file(index.html), so it can be play online.
+This docker image is created for converting mp4 video files (.mp4) to HLS format (.ts) files. When running, it will auto convert and generate a playlist file (platflist.m3u8) and a html video player (index.html), so that it can be played online.
 
-The HLS format is friendly to CDN, so it can be used for build large video project for personal use.
+The HLS format is CDN-friendly, and can be used to build large video projects for personal use.
 
-## usage
-First go to the folder that the mp4 video located, and run docker, when the convert process inside the docker complate, it will delete by itself.
+## Usage
+First, go to the folder that the mp4 video is located on, and run docker container to convert the video. When the conversion is complete, docker container will be automatically be deleted.
 
 ### Running under Linux or Mac:
 ```
