@@ -19,12 +19,12 @@ docker run -it --rm \
 
 ### Running under Windows
 ```
-docker run -it --rm \ 
-    -e FTP_SERVER=你的FTP服务器 \
-    -e FTP_USER=你的FTP用户名 \
-    -e FTP_PASSWORD=你的FTP密码 \
-    -e FTP_UPLOAD_DIR=FTP上传目录 \
-    -e FTP_UPLOAD_PARALLEL=FTP连接线程数 \
-    -e VIDEO_SEGMENT_TIME=视频分片时间长度 \
+docker run -it --rm ^
+    -e FTP_SERVER=你的FTP服务器 ^
+    -e FTP_USER=你的FTP用户名 ^
+    -e FTP_PASSWORD=你的FTP密码 ^
+    -e FTP_UPLOAD_DIR=FTP上传目录 ^
+    -e FTP_UPLOAD_PARALLEL=FTP连接线程数 ^
+    -e VIDEO_SEGMENT_TIME=视频分片时间长度 ^
     -v $(pwd):/root/input surenkid/ffmpeg-hls
 ```
