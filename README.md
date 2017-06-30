@@ -14,7 +14,7 @@ docker run -it --rm \
     -e FTP_UPLOAD_DIR=FTP上传目录 \
     -e FTP_UPLOAD_PARALLEL=FTP连接线程数 \
     -e VIDEO_SEGMENT_TIME=视频分片时间长度 \
-    -v %cd%:/root/input surenkid/ffmpeg-hls
+    -v $(pwd):/root/input surenkid/ffmpeg-hls
 ```
 
 ### Running under Windows
@@ -26,5 +26,5 @@ docker run -it --rm ^
     -e FTP_UPLOAD_DIR=FTP上传目录 ^
     -e FTP_UPLOAD_PARALLEL=FTP连接线程数 ^
     -e VIDEO_SEGMENT_TIME=视频分片时间长度 ^
-    -v $(pwd):/root/input surenkid/ffmpeg-hls
+    -v %cd%:/root/input surenkid/ffmpeg-hls
 ```
